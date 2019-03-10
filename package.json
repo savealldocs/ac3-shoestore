@@ -2,7 +2,7 @@
   "name": "ac3-shoestore",
   "version": "1.0.0",
   "description": "AC3 shoe store to manage inventory",
-  "main": "index.js",
+  "main": "server.js",
   "_requiredBy": [
     "#USER",
     "/"
@@ -12,7 +12,9 @@
     "babel-polyfill": "^6.26.0",
     "express": "^4.15.3",
     "mongoose": "^4.11.2",
-    "q": "^1.5.0"
+    "q": "^1.5.0",
+    "swagger-jsdoc": "^1.3.0",
+    "swagger-ui-express": "^4.0.2"
   },
   "devDependencies": {
     "async": "^2.5.0",

@@ -1,3 +1,92 @@
+/**
+ * @swagger
+ * definition:
+ *   transaction:
+ *     properties:
+ *       item:
+ *         type: Object
+ *       provider:
+ *         type: integer
+ *       Date:
+ *         type: Date
+ *       description:
+ *         type: String,
+ *       quantity:
+ *         type: integer,
+ *       unitPrice:
+ *         type: integer,
+ *       invoiceNumber:
+ *         type: integer,
+ *       user:
+ *          type: Object
+ **/
+/** @swagger
+ * /transactions:
+ *   get:
+ *     tags:
+ *       - get transaction
+ *     description: Returns transactions
+ *     produces:
+ *       - application/json
+ *     responses:
+ *       200:
+ *         description: An array
+ *         schema:
+ *           $ref: '#/definitions/transaction'
+ *   post:
+ *     tags:
+ *       - add transaction
+ *     description: Creates a new transaction
+ *     produces:
+ *       - application/json         
+ *     responses:
+ *       200:
+ *         description: Successfully transaction created
+ *         schema:
+ *           $ref: '#/definitions/transaction'
+ **/
+/** @swagger
+ * /transactions/delete/{id}:
+ *   post:
+ *     tags:
+ *       - delete transaction
+ *     description: Deletes transaction
+ *     produces:
+ *       - application/json         
+ *     responses:
+ *       200:
+ *         description: Successfully transaction deleted
+ *         schema:
+ *           $ref: '#/definitions/transaction'
+ **/
+/** @swagger
+ * /transactions/transform:
+ *   post:
+ *     tags:
+ *       - transform transaction
+ *     description: Transform transaction
+ *     produces:
+ *       - application/json         
+ *     responses:
+ *       200:
+ *         description: Successfully transaction transformed
+ *         schema:
+ *           $ref: '#/definitions/transaction'
+ **/
+/** @swagger
+ * /transactions/transferItem:
+ *   post:
+ *     tags:
+ *       - transfer item transaction
+ *     description: transaction of item transfer
+ *     produces:
+ *       - application/json         
+ *     responses:
+ *       200:
+ *         description: Successfully transfer item transaction performed
+ *         schema:
+ *           $ref: '#/definitions/transaction'
+ **/
 'use strict'
 const express = require('express')
 const router = express.Router()

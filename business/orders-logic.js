@@ -2,7 +2,7 @@ const Order = require('../models/order')
 const Q = require('q')
 const ObjectID = require('mongodb')
   .ObjectID
-module.exports = function OrdersLogic(TransactionsLogic) {
+module.exports = function OrdersLogic(TransactionsLogic, store) {
   let saveOrder = (order) => {
     return new Order(order)
       .save()

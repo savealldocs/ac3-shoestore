@@ -3,7 +3,7 @@ var Q = require('q')
 const ObjectID = require('mongodb')
   .ObjectID
 
-function TransactionsLogic(ItemsLogic) {
+function TransactionsLogic(ItemsLogic, store) {
   var monitor
   let startMonitor = (monitorInstance) => {
     monitor = monitorInstance

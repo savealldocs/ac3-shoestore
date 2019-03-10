@@ -1,11 +1,11 @@
 const Cache = require('../cache')
 const Q = require('q')
 
-function InventoryLogic(TransactionsLogic, OrdersLogic) {
+function InventoryLogic (TransactionsLogic, OrdersLogic,store, MessageQueue) {
   let quantityIn = (query) => {
     return TransactionsLogic.getTransactions(query)
       .then((transactions) => {
-        let qtyIn = calculateActivity(transactions, 'in')
+        let qtyIn = calculateActivity(transactions, 'in')      
         return Q(qtyIn)
       })
       .catch(e => {

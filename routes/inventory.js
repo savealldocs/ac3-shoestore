@@ -1,3 +1,32 @@
+/**
+ * @swagger
+ * definition:
+ *   stocklevel:
+ *     properties:
+ *       item:
+ *         type: string
+ *       Date:
+ *         type: Date
+ *       stocklevel:
+ *         type: integer
+ *       user:
+ *         type: string
+ *
+ * @swagger
+ * /inventory/stockLevel:
+ *   get:
+ *     tags:
+ *       - stockLevel
+ *     description: Returns Item Stock Level
+ *     produces:
+ *       - application/json
+ *     responses:
+ *       200:
+ *         description: An array
+ *         schema:
+ *           $ref: '#/definitions/stocklevel'
+ */
+
 var express = require('express')
 var router = express.Router()
 let parseQueryDateRange = require('../helpers/parametersParser')

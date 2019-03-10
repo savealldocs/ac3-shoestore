@@ -1,0 +1,51 @@
+{
+  "name": "ac3-shoestore",
+  "version": "1.0.0",
+  "description": "AC3 shoe store to manage inventory",
+  "main": "index.js",
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "bundleDependencies": false,
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.2",
+    "q": "^1.5.0"
+  },
+  "devDependencies": {
+    "async": "^2.5.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.17.2",
+    "chai": "^4.1.0",
+    "eslint": "^4.2.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^3.4.2",
+    "sinon": "^2.3.8",
+    "supertest": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savealldocs/ac3-shoestore.git"
+  },
+  "keywords": [
+    "ac3",
+    "shoestore"
+  ],
+  "author": "Niraj Kumar <savealldocs.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/savealldocs/ac3-shoestore/issues"
+  },
+  "homepage": "https://github.com/savealldocs/ac3-shoestore#readme"
+}
